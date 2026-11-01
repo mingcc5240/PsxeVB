@@ -1,0 +1,1 @@
+gcc -m32 -shared -Ofast -o psxe.dll  frontend/psxe_dll.c frontend/argparse.c frontend/config.c frontend/screen.c frontend/toml.c psx/*.c psx/dev/*.c psx/dev/cdrom/*.c psx/input/*.c -I. -Ifrontend -lSDL2 -Wl,--kill-at -static -lmingw32 -lSDL2 -lgdi32 -lole32 -lsetupapi -lwinmm -limm32 -lversion -loleaut32

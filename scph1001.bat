@@ -1,0 +1,1 @@
+python -c "d=open('SCPH1001.bin','rb').read(); open('scph1001.h','w').write(f'static const unsigned char SCPH1001_bin[{len(d)}]={{' + ','.join(map(hex,d)) + '};\n')"
